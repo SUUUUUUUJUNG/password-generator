@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 암호 생성기</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🔑 간단한 암호 생성기</h1>
+    <label>비밀번호 길이: <input type="number" id="length" min="4" max="20" value="12"></label>
+    <label><input type="checkbox" id="includeNumbers" checked> 숫자 포함</label>
+    <label><input type="checkbox" id="includeSpecialChars"> 특수문자 포함</label>
+    <button onclick="generatePassword()">생성하기</button>
+
+    <h2>📄 생성된 비밀번호:</h2>
+    <input type="text" id="passwordResult" readonly>
+    <button onclick="copyToClipboard()">복사</button>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
